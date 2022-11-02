@@ -1,5 +1,5 @@
 def draw_snake():
-    snake_pxl_loc = 0
+    global snake_pxl_loc
     while snake_pxl_loc <= len(snake_loc_x) + -1:
         led.plot(snake_loc_x[snake_pxl_loc], snake_loc_y[snake_pxl_loc])
         snake_pxl_loc += 1
@@ -56,6 +56,7 @@ input.on_button_pressed(Button.B, on_button_pressed_b)
 snake_temp_loc_x = 0
 snake_velocity_x = 0
 snake_temp_loc_y = 0
+snake_pxl_loc = 0
 snake_loc_y: List[number] = []
 snake_loc_x: List[number] = []
 snake_velocity_y = 0

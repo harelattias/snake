@@ -1,5 +1,5 @@
 function draw_snake() {
-    let snake_pxl_loc = 0
+    
     while (snake_pxl_loc <= snake_loc_x.length + -1) {
         led.plot(snake_loc_x[snake_pxl_loc], snake_loc_y[snake_pxl_loc])
         snake_pxl_loc += 1
@@ -75,6 +75,7 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
 let snake_temp_loc_x = 0
 let snake_velocity_x = 0
 let snake_temp_loc_y = 0
+let snake_pxl_loc = 0
 let snake_loc_y : number[] = []
 let snake_loc_x : number[] = []
 let snake_velocity_y = 0
